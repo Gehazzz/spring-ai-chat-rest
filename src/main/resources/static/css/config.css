@@ -1,0 +1,128 @@
+body.comic-body {
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: #f8f8f8;
+    color: #333;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.config-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.back-button {
+    align-self: flex-start;
+    background: #eee;
+    padding: 8px 14px;
+    font-size: 0.95em;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.15s, transform 0.1s;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background: #ddd;
+    transform: scale(1.02);
+}
+
+h1 {
+    font-size: 1.5em;
+    margin: 0;
+    text-align: center;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prompt-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 4px;
+}
+
+.prompt-section h2 {
+    font-size: 1.2em;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    color: #444;
+}
+
+.prompt-card {
+    flex: 1;
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 8px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.prompt-card label {
+    font-weight: bold;
+    /*margin: 10px 0 4px;*/
+}
+
+.prompt-card input[type="text"],
+.prompt-card select {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.prompt-card textarea {
+    height: 90px;
+    max-height: 100px;
+    overflow-y: auto;
+    resize: none;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+/* Кнопки */
+.button-row {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.button-row button {
+    padding: 8px 14px;
+    font-size: 0.95rem;
+    background: #ffa500;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.15s, transform 0.1s;
+    white-space: nowrap;
+}
+
+.button-row button:hover {
+    background: #ffc04d;
+    transform: scale(1.02);
+}
+
+.button-row button[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
